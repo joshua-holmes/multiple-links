@@ -39,7 +39,7 @@
       height: 40px;
     }
 
-    .container {
+    #card-container {
       max-width: 600px;
       margin: 2rem auto;
       padding: 1rem;
@@ -67,6 +67,7 @@
     .link {
       color: #1e88e5;
       text-decoration: none;
+      display: block;
     }
 
     .link:hover {
@@ -74,7 +75,7 @@
     }
 
     @media (max-width: 600px) {
-      .container {
+      #card-container {
         padding: 0.5rem;
       }
       .link-card {
@@ -86,13 +87,13 @@
 <body>
 
   <header>
-    <a href="./index.html" class="logo-link">
+    <a href="./" class="logo-link">
       <img src="./images/multiple-links.png" alt="Logo" class="logo">
     </a>
     <!-- Optional: add a heading or nav here -->
   </header>
 
-  <div class="container">
+  <div id="card-container">
     <div class="link-card">
       <span class="label">Google</span>
       <a class="link" href="https://www.google.com" target="_blank">Visit Google</a>
@@ -104,5 +105,6 @@
     <!-- Add more link-cards as needed -->
   </div>
 
+    <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
