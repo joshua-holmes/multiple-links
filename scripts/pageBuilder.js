@@ -8,8 +8,12 @@ export class Link {
 
     buildElement() {
         const link = document.createElement("a");
-        link.href = this.url
-        link.textContent = this.text || this.url
+        if (this.url.slice(0, 7) !== "http://" && this.url.slice(0, 8) !== "https://") {
+            link.href = "https://" + this.url;
+        } else {
+            link.href = this.url;
+        }
+        link.textContent = this.text || this.url;
         link.className = "link";
         link.target = "_blank";
         return link;
