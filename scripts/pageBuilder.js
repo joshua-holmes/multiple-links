@@ -4,22 +4,18 @@ export class Link {
     constructor(url, text) {
         this.url = url; // type: string
         this.text = text; // type: string?
-        this.length_limit = 25; // type: number
     }
 
     buildElement() {
         const link = document.createElement("a");
         link.href = this.url
         link.textContent = this.text || this.url
-        if (link.textContent > this.length_limit) {
-            link.textContent = link.textContent.slice(0, this.length_limit - 3) + "...";
-        }
         link.className = "link";
         link.target = "_blank";
         return link;
     }
 }
-const ERROR_LINK = new Link("https://github.com/joshua-holmes/multiple-links", "Read instructions to build your own multi link");
+const ERROR_LINK = new Link("github.com/joshua-holmes/multiple-links", "Read instructions to build your own multi link");
 
 export class Card {
     constructor(title, links, error) {
