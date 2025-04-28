@@ -20,6 +20,38 @@ Notice all the data you see on the page is embedded in the URL params of the URL
 
 Right now, I don't have an easy way of building links, though that is coming soon. So I'll tell you how it works:
 
+### Short version
+
+Just edit one of these example links with your own url(s).
+
+#### Want a couple cards?
+
+```
+https://multiple-links.com/?v=1&l=example.com&h=My%20Example%20Website&l=example.com&h=My%20Other%20Example%20Website
+```
+
+<img src="./images/couple-cards.png" />
+
+
+#### Want one card with a couple links?
+
+```
+https://multiple-links.com/?v=1&l=example.com&l=example.com&h=My%20Example%20Website
+```
+
+<img src="./images/couple-links.png" />
+
+#### Want to title those links? (same principle can be applied to the multiple card example as well)
+
+```
+https://multiple-links.com/?v=1&t=My%20Link&l=example.com&t=My%20Other%20Link&l=example.com&h=My%20Example%20Website
+```
+
+<img src="./images/couple-named-links.png" />
+
+
+### Long version
+
 There are 3 possible URL params:
 * `v` (required)
 * `h` (required)
