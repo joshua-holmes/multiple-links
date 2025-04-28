@@ -12,6 +12,8 @@ Visit this link to see my website, github, and linkedin:
 
 https://multiple-links.com?v=1&l=holmes-software.com&h=My%20Website&t=GitHub&l=github.com/joshua-holmes&t=LinkedIn&l=www.linkedin.com/in/joshua-phillip-holmes/&h=My%20Socials
 
+<img src="./images/demo.png" />
+
 Notice all the data you see on the page is embedded in the URL params of the URL above. That's how it works.
 
 ## How do I make my own Multi-Link?
